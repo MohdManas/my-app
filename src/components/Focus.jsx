@@ -10,9 +10,8 @@ export default function Focus() {
         </div>
         <div className="focus-card-content">
           Customer-centric approach with global expertise, local insight, and regulatory focus.
-          <p>
-            Education and trust building; adaptability to new regulations; increase adoption.
-          </p>
+        <br/> Education and trust building; adaptability to new regulations; increase adoption.
+            
         </div>
         <ul className="focus-card-list">
           <li>Business Activities (Non-Discretionary Advisory Services):</li>

@@ -72,7 +72,7 @@ export default function App() {
         <section ref={refs.custom}><CustomSegment /></section>
         <section ref={refs.contact}><Contact /></section>
       </main>
-<RiskDisclaimer />
+{/* <RiskDisclaimer /> */}
       <Footer />
     </div>
   );

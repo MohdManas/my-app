@@ -1,3 +1,5 @@
+// Footer.jsx
+
 const legalDocs = [
   { name: "Website Disclaimer", file: "website-disclaimer.pdf" },
   { name: "Whistleblowing Policy", file: "whistleblowing-policy.pdf" },
@@ -14,24 +16,37 @@ const legalDocs = [
 
 export default function Footer() {
   return (
-    <footer className="legal-footer">
-      <div className="legal-footer-container">
-        <h3 className="legal-footer-title">Legal Documents</h3>
-        <div className="legal-docs-grid">
-          {legalDocs.map((doc, i) => (
-            <a
-              key={i}
-              className="legal-doc-link"
-              href={doc.file}
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
-              {doc.name}
-            </a>
-          ))}
+    <>
+      <footer className="legal-footer">
+        <div className="legal-footer-container">
+          <h3 className="legal-footer-title">Legal Documents</h3>
+          <div className="legal-docs-grid">
+            {legalDocs.map((doc, i) => (
+              <a
+                key={i}
+                className="legal-doc-link"
+                href={doc.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                {doc.name}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+
+      {/* Risk Disclaimer Below Footer */}
+      <section className="footer-disclaimer">
+        <div className="footer-disclaimer-container">
+          <p>
+            The content of this material is for Qualified Investor and institutional clients only.
+            It is not directed to Retail Clients or residents of any jurisdiction where VA Digital
+            Advisory Assets trading is restricted or prohibited by local laws or regulations.
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
