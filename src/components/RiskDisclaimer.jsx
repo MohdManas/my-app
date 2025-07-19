@@ -11,11 +11,6 @@ export default function RiskDisclaimer() {
 
       <div className="risk-disclaimer-body">
         {/* Image at the top */}
-        <img
-          src={disclaimerImg}
-          alt="Risk Disclaimer Graphic"
-          className="risk-disclaimer-image"
-        />
 
         {/* Content below image */}
         <p className="risk-disclaimer-text">
