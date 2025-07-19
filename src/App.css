@@ -14,7 +14,7 @@ body, html, #root {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3vw;
+  padding: 0 2vw;
   height: 76px;
   background: var(--color-primary);
   color: #fff;
@@ -24,8 +24,8 @@ body, html, #root {
 }
 
 .logo-area {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
@@ -975,3 +975,70 @@ main section {
   z-index: 1;
 }
 
+/* RiskDisclaimer.css */
+
+.risk-disclaimer-section {
+  padding: 60px 20px;
+  background-color: var(--color-bg, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.risk-disclaimer-header {
+  margin-bottom: 32px;
+}
+
+.risk-disclaimer-header h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--color-primary, #111);
+  letter-spacing: 0.6px;
+}
+
+.risk-disclaimer-body {
+  width: 100%;
+}
+
+.risk-disclaimer-image {
+  width: auto;              /* Let width adjust automatically */
+  max-height: 250px;        /* Set the maximum height you want */
+  height: auto;             /* Auto height to keep aspect ratio */
+  max-width: 100%;          /* Don't grow wider than container */
+  object-fit: contain;      /* Ensure image fits inside without cropping or distortion */
+  border-radius: 12px;      /* Optional, for styling */
+  margin-bottom: 24px;      /* Space below image */
+  display: block;           /* Better layout behavior */
+  margin-left: auto;        /* Center horizontally */
+  margin-right: auto;
+}
+
+.risk-disclaimer-text {
+  font-size: 1.15rem;
+  color: #444444;
+  line-height: 1.75;
+  font-weight: 500;
+  padding: 0 12px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .risk-disclaimer-section {
+    padding: 40px 12px;
+    border-radius: 12px;
+  }
+
+  .risk-disclaimer-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .risk-disclaimer-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
