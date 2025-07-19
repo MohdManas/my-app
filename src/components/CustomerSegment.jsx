@@ -2,9 +2,9 @@ import janeImg from "../assets/Team.png";
 
 const segmentCards = [
   "Qualified Investors",
-  "Institutional Investors",
-  "VARA-Defined Categories",
-  "Market Conduct Rulebook"
+  " Family offices",
+  "Corporates",
+  "High net worth individuals, meeting Qualifying Investor criteria"
 ];
 
 export default function CustomSegment() {
@@ -14,11 +14,11 @@ export default function CustomSegment() {
         <div className="segment-heading-row">
           <h2 className="segment-title">Custom Segment</h2>
         </div>
-        {/* <div className="segment-img-wrap">
+        <div className="segment-img-wrap">
           <img src={janeImg} alt="Custom Segment" className="segment-img" />
-        </div> */}
+        </div>
         <p className="segment-desc">
-          The Firm will only work with Qualified Investors and Institutional Investors, as defined by VARA and Definition provided in Market Conduct Rulebook.
+          The content of this material is for Qualified Investor and institutional clients only. It is not directed to Retail Clients or residents of any jurisdiction where VA Digital Advisory Assets trading is restricted or prohibited by local laws or regulations.
         </p>
         <div className="segment-card-grid">
           {segmentCards.map((item, idx) => (
